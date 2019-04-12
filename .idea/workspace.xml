@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7436c86-f29a-47a8-b4a4-32d6092d67c5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a7436c86-f29a-47a8-b4a4-32d6092d67c5" name="Default" comment="" />
     <ignored path="Black-And-White.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,16 +116,15 @@
       <workItem from="1554953397839" duration="2635000" />
       <workItem from="1554967489951" duration="635000" />
       <workItem from="1554979373935" duration="421000" />
-      <workItem from="1555061375204" duration="360000" />
+      <workItem from="1555061375204" duration="702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8469000" />
+    <option name="totallyTimeSpent" value="8811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" weight="0.25" />
