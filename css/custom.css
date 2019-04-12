@@ -210,11 +210,11 @@ figure {
 }
 
 .entry-title {
-	text-align: center;
+	text-align: left;
 	font-size: 1.9em;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	line-height: 1.6;
-	padding: 10px 20px 0;
+	padding: 10px 20px 0px 0px ;
 }
 
 .entry-meta {
@@ -351,20 +351,20 @@ figure {
 	font-weight: 400;
 }
 
-.widget-recent-posts ul {
+.widget-projects ul {
     padding: 0;
     margin: 0;
     padding-left: 20px;
 }
 
-.widget-recent-posts ul li {
+.widget-projects ul li {
     list-style-type: none;
     position: relative;
     line-height: 170%;
     margin-bottom: 10px;
 }
 
-.widget-recent-posts ul li::before {
+.widget-projects ul li::before {
     content: '\f3d3';
     font-family: "Ionicons";
     position: absolute;
@@ -374,20 +374,20 @@ figure {
     color: #000;
 }
 
-.widget-archives ul {
+.widget-tools ul {
     padding: 0;
     margin: 0;
     padding-left: 25px;
 }
 
-.widget-archives ul li {
+.widget-tools ul li {
     list-style-type: none;
     position: relative;
     line-height: 170%;
     margin-bottom: 10px;
 }
 
-.widget-archives ul li::before {
+.widget-tools ul li::before {
     content: '\f3f3';
     font-family: "Ionicons";
     position: absolute;
@@ -806,17 +806,17 @@ figure {
 
 /* unvisited link */
 a:link {
-	color: red;
+	color: blue;
 }
 
 /* visited link */
 a:visited {
-	color: green;
+	color: gray;
 }
 
 /* mouse over link */
 a:hover {
-	color: hotpink;
+	color: rebeccapurple;
 }
 
 /* selected link */
