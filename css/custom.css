@@ -210,7 +210,7 @@ figure {
 }
 
 .entry-title {
-	text-align: left;
+	/*text-align: left;*/
 	font-size: 1.9em;
 	margin-bottom: 0px;
 	line-height: 1.6;
