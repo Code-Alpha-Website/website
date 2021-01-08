@@ -1,0 +1,15 @@
+org.codealpha.gmsservice
+org.codealpha.gmsservice.constants
+org.codealpha.gmsservice.controllers
+org.codealpha.gmsservice.entities
+org.codealpha.gmsservice.entities.dashboard
+org.codealpha.gmsservice.exceptions
+org.codealpha.gmsservice.interceptors
+org.codealpha.gmsservice.models
+org.codealpha.gmsservice.models.dashboard
+org.codealpha.gmsservice.repositories
+org.codealpha.gmsservice.repositories.dashboard
+org.codealpha.gmsservice.schedulers
+org.codealpha.gmsservice.security
+org.codealpha.gmsservice.services
+org.codealpha.gmsservice.validators

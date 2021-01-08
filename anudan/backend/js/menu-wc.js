@@ -49,6 +49,11 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                         <span class="icon ion-ios-list"></span>Dependencies
                                     </a>
                                 </li>
+                                <li class="link">
+                                    <a href="docs/index.html" data-type="chapter-link" target="_blank">
+                                        <span class="icon ion-ios-list"></span>Javadocs
+                                    </a>
+                                </li>
                     </ul>
                 </li>
                     
