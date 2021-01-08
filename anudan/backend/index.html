@@ -43,7 +43,14 @@
     <li>Install <code>Gradle</code></li>
     <li>Setup Anudan database [<i><a href="#databasesetup">setting up Anudan database</a></i>]</li>
 </ul>
-<h2 id="quick-start">Quick start - Development Environment Setup</h2>
+<h2 id="quick-start">Setting up Anudan database</h2>
+<ul>
+    <a href="#databasesetup"><li>Create the database in the Postgres instance by running <code>master.sql</code>.
+        <pre class="line-numbers"><code class="language-none">psql -U &lt;username&gt; -p -d &lt;database&gt; &lt; master.sql</code></pre>
+    </li>
+    </a>
+</ul>
+<h2 id="quick-start">Quick start - Environment Setup</h2>
 <ol>
     <li>Run <code>git clone https://repos.code-alpha.org/scm/gms/gms-service.git</code></li>
     <li>Navigate to cloned project folder</li>
@@ -78,7 +85,7 @@ spring:<br />
     send-mail: false<br />
     recaptcha-secret-key: [<i>recaptcha secret if using one</i>>]<br />  
     datasource:<br />    
-        url: jdbc:postgresql://[<i>host</i>>:<i>port</i>/<i>database</i>><br />    
+        url: jdbc:postgresql://<i>host</i>>:<i>port</i>/<i>database</i><br />    
         username: <i>database username</i>><br />    
         password: <i>database password</i>><br />    
         initialization-mode: always<br />    
