@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Anudan - Grant Management System</title>
+         <!-- css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/pace.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- js -->
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/pace.min.js"></script>
+    <script src="/js/modernizr.custom.js"></script>
+
+    <!--favicon + PWA -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="container">
+            <header id="site-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 col-xs-8">
+                        <div class="logo">
+                            <h1><a href="/index.html"><img src="/img/code-alpha_logo.png" alt="Logo for Code Alpha" width="140px"></a></h1>
+                        </div>
+                    </div><!-- col-md-4 -->
+                    <div class="col-md-8 col-sm-7 col-xs-4">
+                        <nav class="main-nav" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" id="trigger-overlay" class="navbar-toggle">
+                                    <span class="ion-navicon"></span>
+                                </button>
+                            </div>
+        
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="cl-effect-11"><a href="/Projects.html" data-hover="Projects">Projects</a></li>
+                                    <li class="cl-effect-11"><a href="/Tools.html" data-hover="Tools">Tools</a></li>
+                               </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div><!-- col-md-8 -->
+                </div>
+            </header>
+        </div>
+
+        <div class="content-body">
+            <div class="container">
+                <h4>Creating a new tenant</h4>
+                <p>When Anudan database is setup it also creates a single user with administrative privileges called the Platform Administrator (PA).</p>
+                <p>The PA is resonsible for creating the first tenant (the Grant giving organization). <i>Please see the steps below to create a new tenant.</i></p>
+                <ol>
+                    <li>
+                        <p>Launch http://localhost:8080 on your browser. And enter PA credentials as <code>administrator@anudan.com</code> / <code>password</code></p>
+                        <img src="/img/anudan/login.png" style="width: 50%;">
+                    </li>
+                    <li><p>In the tenant setup screen provide details as given below and click <button class="btn btn-sm">Send Invite</button></p>
+                        <ol>
+                            <li><b>Tenant</b>: Name of the Grant giving organization</li>
+                            <li><b>Tenant Slug</b>: One-Word short code for the organization</li>
+                            <li><b>Send invite to</b>: Email of the person who will the tenant administrator</li>
+                            <li><b>Choose File</b>: Organization logo image (png recommended)</li>
+                        </ol>
+                        <img src="/img/anudan/tenant-setup.png" style="width: 50%;">
+                    </li>
+                    <article class="note">
+                        <p>Creating a new tenant carries out the following activities</p>
+                        <ul>
+                            <li>Stores uploaded logo</li>
+                            <li>Creates a Granter organization with url <code>http://&lt;short-code&gt;/localhost:8080</code> </li>
+                            <li>Creates user with email set in <code>Send invite to</code>. An invitation email is sent out with a link to verify email and complete the registration</li>
+                        </ul>
+                    </article>
+                </ol>
+                <br>
+                <h4>Tenant Administration</h4>
+                <p>The tenant user created in the previous step is by default the Tenant Administrator (TA) and is responsible for the configration and upkeep of the tenant organization</p>
+                <h5>First Time Login</h5>
+                <p>Follow the invitation link and complete the registration process as below</p>
+                <img src="/img/anudan/tenant-signup.png" style="width: 50%;">
+                <h5>Setting up Roles and Users</h5>
+                <article>
+                    <ol>
+                        <li>
+                            <p>Navigate to <code>Organization</code> > <code>Administration</code> > <code>Roles</code> and create Roles as below</p>
+                            <img src="/img/anudan/roles-admin.png" style="width: 50%;"><span>Enter <code>Role name</code> and <code>Description</code> and click <button class="btn btn-sm">Save Role</button></span>
+                            <img src="/img/anudan/roles-admin-2.png" style="width: 50%;"><span>New Role is displayed in <code>Manage Roles</code> section</span>
+                        </li>
+                        <li>
+                            <p>Navigate to <code>Organization</code> > <code>Administration</code> > <code>Users</code> and create Users as below</p>
+                            <p class="note">Newly added users receive an email invite</p>
+                            <img src="/img/anudan/user-admin.png" style="width: 50%;"><span>Enter <code>Email address </code> and <code>Select a role</code> and click <button class="btn btn-sm">Send Invitation</button></span>
+                        </li>
+                    </ol>
+                </article>
+                <h5>Setting up Library</h5>
+                <p>Anudan allows setting up of a document library that can be used throughout the application where a document is upload is required</p>
+                <img src="/img/anudan/doc-library.png" style="width: 50%;">
+                <h5>Customizing App Configurations</h5>
+                <p>Anudan currently provides a way for the Tenant Admin to customzie 2 Anudan Default settings. These settings override platform settings and become specific to the organization</p>
+                <img src="/img/anudan/app-setting.png" style="width: 50%;">
+                <br><br>
+                
+            </div>
+        </div>
+    </body>
+</html>
